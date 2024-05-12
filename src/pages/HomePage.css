@@ -1,0 +1,57 @@
+.homePage {    
+    font-size: 16px;
+    background-color: #FAFAFA;
+    height: calc(100vh - 80px);
+}
+.homeDarkMode {
+    background-color: #202C36;
+    color: white;
+}
+.cardWrapper {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(50px, 1fr));
+    grid-gap: 2rem;
+    grid-auto-flow: row;
+    padding: 80px;
+    padding-top: 0px;
+}
+.darkCardWrapper{
+    background-color: #202C36;
+    color: white;    
+}
+
+@media screen and (max-width: 1024px) {
+    .cardWrapper {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(50px, 1fr));        
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .cardWrapper {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(10px, 1fr));
+        grid-gap: 1.5rem;
+        grid-auto-flow: row;
+        padding: 60px;
+        padding-top: 0px;
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    .cardWrapper {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(10px, 1fr));
+        grid-gap: 0px;
+        grid-auto-flow: row;
+        padding: 2.5rem;
+        padding-top: 0px;
+    }
+  }
+
+  /* @media screen and (max-width: 480px) {
+    .cardWrapper {
+        padding: 1.5rem;
+        padding-top: 0px;
+    }
+  } */

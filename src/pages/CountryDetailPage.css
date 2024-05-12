@@ -1,0 +1,189 @@
+.countryDetailWrapper {
+    height: calc(100vh - 80px);
+    padding: 60px;
+    font-size: 14px;
+}
+.darkCountryDetailWrapper {
+    background-color: #202C36;
+    color: white;
+}
+.backButtonWrapper {
+    min-width: 136px;
+    text-align: center;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.backButton {
+    padding-left: 10px;
+}
+
+.detailSection {
+    display: flex;
+}
+.leftSection {
+    max-width: 556px;
+}
+.rightSection {
+    max-width: 680px;
+    padding-left: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.rightSectionLayout {
+    max-width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;    
+}
+.countryTitle {
+    font-weight: 800;
+    font-size: 20px;
+    padding: 15px;
+}
+
+.detailFlagImage {
+    max-width: 100%;
+    min-height: 401px;
+}
+.subDetailWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.subDetail {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.commonDiv {
+    padding: 5px;
+}
+
+.footerPart {
+    display: flex;
+    padding-top: 30px;
+}
+.footerTitle {
+    display: inline-block;
+    padding: 20px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    min-width: 150px;
+}
+.footerContent {
+    display: flex;
+    flex-wrap: wrap;
+    gap:5px;
+    padding: 20px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-top: 10px;
+}
+.borderTag {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+}
+.darkBorderTag {    
+    background-color: #2B3844;
+    color: white;    
+}
+.fontWeight600 {
+    font-weight: 600;
+}
+
+@media screen and (max-width: 1200px) {
+    .countryDetailWrapper {
+        padding: 40px;
+    }
+    .countryTitle {
+        padding: 10px;
+    }   
+    .leftSection {
+        max-width: 530px;
+    }
+    .detailFlagImage {
+        max-width: 95%;
+        min-height: 460px;
+    }
+    .rightSection {
+        padding-left: 80px;        
+    }
+    .footerPart {
+        padding-top: 20px;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .countryDetailWrapper {
+        padding-top: 30px;
+    }    
+    .leftSection {
+        max-width: 510px;
+    }
+    .rightSection {
+        max-width: 500px;
+        padding-left: 65px;        
+    }
+    .footerPart {
+        padding-top: 5px;
+    }  
+  }
+
+  @media screen and (max-width: 768px) {
+    .countryDetailWrapper {
+        padding: 30px;
+        padding-top: 0px;
+    }
+    .detailSection {
+        flex-direction: column;
+    }
+    .leftSection {
+        max-width: 100%;
+        padding: 10px;
+    }
+    .rightSection {
+        /* max-width: 100%; */
+        padding: 10px;
+    }
+    .detailFlagImage {
+        max-width: 100%;
+        min-height: 280px;
+    }
+    .subDetailWrapper {
+        flex-direction: column;
+        gap:10px;
+    }
+    .subDetail {
+        padding: 5px;
+    }
+    .footerPart {
+        flex-direction: column;
+    }
+    .footerTitle {
+        padding-left: 10px;
+    }
+    .footerContent {
+        padding-left: 10px;
+    }    
+  }
+
+  @media screen and (max-width: 480px) {
+    .countryDetailWrapper {
+        padding: 20px;
+        padding-top: 0px;
+    }    
+    .detailFlagImage {
+        max-width: 100%;
+        min-height: 229;
+    }   
+} 
+  
+  

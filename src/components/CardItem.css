@@ -1,0 +1,61 @@
+
+.cardItemWrapper {
+    display: flex; 
+    flex-direction: column; 
+    max-width: 264px;
+    max-height: 336px;  
+}
+.imageWrapper {
+    max-width: 100%;
+    height: 49%;
+    background-color: aqua;
+}
+
+.flagImage{
+    object-fit: cover;
+    max-width: 100%;
+    width: 570px;
+    max-height: 300px;
+}
+.cardItemInfo {
+    height: 51%;
+    max-width: 100%;
+    background-color: chartreuse;
+}
+.countryName {
+    font-weight: 800;
+    padding: 20px;
+    padding-bottom: 15px;
+}
+.cardItemSubDetails {    
+    padding-left: 20px;    
+    padding-bottom: 3px;
+}
+.fontWeight800 {
+    font-weight: 800;
+}
+
+@media screen and (max-width: 1024px) {
+    .cardItemWrapper {
+       max-width: 100%;
+       max-height: 350px ;
+    }
+    .cardItemInfo {
+        height: 55%;
+    }    
+  }
+  @media screen and (max-width: 576px) {
+    .cardItemInfo {
+        height: 45%;
+    }  
+  }
+
+  @media screen and (max-width: 480px) {
+    .cardItemWrapper {
+        max-width: 320px;
+        min-height: 350px ;
+     }
+     .cardItemInfo {
+         height: 43%;
+     } 
+  }

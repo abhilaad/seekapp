@@ -1,0 +1,38 @@
+.searchContainer {
+    max-width: 480px;
+    color: #848484
+}
+.darkSearchContainer {
+    background-color: #2B3844;
+    color: white;    
+}
+.searchIcon {
+    display: inline-block;
+    max-width: 24px;
+    max-height: 24px;
+    padding: 15px;
+    background-color: white;
+}
+.searchInput {
+    font-weight: 300;
+    font-size: 16px;
+    display: inline-block;
+    max-height: 24px;
+    padding: 15px;
+    border: none;
+    outline: none;
+}
+.darkSearchInput {
+    background-color: #2B3844;
+    color: white;
+}
+@media screen and (max-width: 768px) {
+    .searchContainer {
+       max-width: 100%;   
+       margin-bottom: 40px;  
+    }
+    .searchInput {        
+        max-height: 100%;
+        padding: 12px;
+    }
+  }

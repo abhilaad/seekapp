@@ -1,0 +1,19 @@
+.filterContainer {
+    min-width: 200px;
+    padding: 15px;    
+}
+.darkFilterContainer {
+    background-color: #2B3844;
+    color: white; 
+}
+.filterTitle {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+@media screen and (max-width: 768px) {
+    .filterContainer {
+       max-width: 200px;   
+       /* margin-bottom: 40px;   */
+    }
+  }
