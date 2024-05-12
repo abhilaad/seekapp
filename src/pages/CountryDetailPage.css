@@ -2,6 +2,7 @@
     height: calc(100vh - 80px);
     padding: 0px 80px;
     font-size: 14px;
+    background-color: #FAFAFA;
 }
 .darkCountryDetailWrapper {
     background-color: #202C36;
@@ -25,6 +26,7 @@
 .detailSection {
     display: flex;
     padding-top: 10px;
+    padding-bottom: 60px;
 }
 .leftSection {
     max-width: 556px;

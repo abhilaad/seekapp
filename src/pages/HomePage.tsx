@@ -11,7 +11,7 @@ import CountryDataType from "../entities/CountryData";
 
 const HomePage = () => {
     const { theme } = useTheme();
-    const [lastElement,setLastElement] = useState()
+    const [lastElement,setLastElement] = useState<HTMLDivElement | null>()
     const [renderCardData, setRenderCardData] = useState<CountryDataType[]>([])
     // implementing local pagination using intersection observer
     const [page, setPage] = useState(1)
@@ -53,7 +53,7 @@ const HomePage = () => {
     <div className={theme === "dark" ? "cardWrapper darkCardWrapper" : "cardWrapper"}>
       {renderCardData?.length > 0 && renderCardData?.map((item,ind)=>{
         if(ind === renderCardData.length - 1){
-          return (<div key={item?.name} ref={setLastElement as any}>
+          return (<div key={item?.name} ref={setLastElement}>
           <CardItem  data={item}  />
           </div>)
         }

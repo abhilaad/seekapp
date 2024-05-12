@@ -1,6 +1,6 @@
 .homePage {    
     font-size: 16px;
-    background-color: #FAFAFA;
+    background-color: hsl(0, 0%, 98%);
     height: calc(100vh - 80px);
 }
 .homeDarkMode {
@@ -14,6 +14,7 @@
     grid-auto-flow: row;
     padding: 80px;
     padding-top: 0px;
+    background-color: hsl(0, 0%, 98%);;
 }
 .darkCardWrapper{
     background-color: #202C36;

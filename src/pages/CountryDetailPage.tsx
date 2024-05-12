@@ -4,6 +4,7 @@ import "./CountryDetailPage.css"
 import { useTheme } from '../themes/themeContext';
 import CountryDataType from '../entities/CountryData';
 import { useEffect } from 'react';
+import { BACK, BORDER_COUNTRIES, CAPITAL, CURRENCIES, LANGUAGES, NATIVE_NAME, POPULATION, REGION, SUB_REGION, TOP_LEVEL_DOMAIN } from '../constants/stringConstants';
 
 const CountryDetailPage = () => {
   const location = useLocation()
@@ -65,7 +66,7 @@ const CountryDetailPage = () => {
         navigate("/")
       }}>
         <ArrowLeftOutlined />
-        <span className='backButton'>Back</span>
+        <span className='backButton'>{BACK}</span>
       </button>
       <div className='detailSection'>
         <div className='leftSection'>          
@@ -76,21 +77,21 @@ const CountryDetailPage = () => {
             <div className='countryTitle'>{data.name}</div>
             <div className='subDetailWrapper'>
               <div className='subDetail'>
-                <div className='commonDiv'><span className='fontWeight600'>Native name: </span><span>{data.nativeName}</span></div>
-                <div className='commonDiv'><span className='fontWeight600'>Population: </span> <span>{data.population}</span></div>
-                <div className='commonDiv'><span className='fontWeight600'>Region: </span> <span>{data.region}</span></div>
-                <div className='commonDiv'><span className='fontWeight600'>Sub Region: </span> <span>{data.subregion}</span></div>
-                <div className='commonDiv'><span className='fontWeight600'>Capital: </span> <span>{data.capital}</span></div>
+                <div className='commonDiv'><span className='fontWeight600'>{NATIVE_NAME}</span><span>{data.nativeName}</span></div>
+                <div className='commonDiv'><span className='fontWeight600'>{POPULATION}</span> <span>{data.population}</span></div>
+                <div className='commonDiv'><span className='fontWeight600'>{REGION}</span> <span>{data.region}</span></div>
+                <div className='commonDiv'><span className='fontWeight600'>{SUB_REGION}</span> <span>{data.subregion}</span></div>
+                <div className='commonDiv'><span className='fontWeight600'>{CAPITAL}</span> <span>{data.capital}</span></div>
               </div>
               <div className='subDetail'>
-                <div className='commonDiv'><span className='fontWeight600'>Top Level Domain: </span> <span>{topLevelDomain}</span></div>
-                <div className='commonDiv'><span className='fontWeight600'>Currencies: </span> <span>{currencies}</span></div>
-                <div className='commonDiv'><span className='fontWeight600'>Languages:</span> <span>{languages}</span></div>
+                <div className='commonDiv'><span className='fontWeight600'>{TOP_LEVEL_DOMAIN}</span> <span>{topLevelDomain}</span></div>
+                <div className='commonDiv'><span className='fontWeight600'>{CURRENCIES}</span> <span>{currencies}</span></div>
+                <div className='commonDiv'><span className='fontWeight600'>{LANGUAGES}</span> <span>{languages}</span></div>
               </div>
             </div>
             
             {borders?.length > 0 && <div className='footerPart'>
-              <div className='footerTitle'>Border Countries:</div>
+              <div className='footerTitle fontWeight600'>{BORDER_COUNTRIES}</div>
               <div className="footerContent">{borders.map((item: string)=>{
                 return (<button key={item} onClick={()=>{
                   handleClick(item)

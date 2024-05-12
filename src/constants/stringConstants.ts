@@ -1,0 +1,17 @@
+export const BACK = "Back"
+export const NATIVE_NAME = "Native name: "
+export const POPULATION = "Population: "
+export const REGION = "Region: "
+export const SUB_REGION = "Sub Region: "
+export const CAPITAL = "Capital: "
+export const TOP_LEVEL_DOMAIN = "Top Level Domain: "
+export const CURRENCIES = "Currencies: "
+export const LANGUAGES = "Languages: "
+export const BORDER_COUNTRIES = "Border Countries:"
+
+export const NAV_TITLE = "Where in the world?"
+export const DARK_MODE = "Dark Mode"
+export const LIGHT_MODE = "Light Mode"
+
+export const FILTER_BY_REGION = "Filter by Region"
+export const SEARCH_COUNTRY = "Search for a country..."

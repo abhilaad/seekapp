@@ -9,6 +9,7 @@ import { useAppDispatch } from '../store';
 import { setCountryData } from '../countrySlice';
 import "./FilterBar.css"
 import CountryDataType from '../entities/CountryData';
+import { FILTER_BY_REGION } from '../constants/stringConstants';
 
 const FilterBar = () =>{
   const dispatch = useAppDispatch()
@@ -80,7 +81,7 @@ const FilterBar = () =>{
  }} >
     <Dropdown trigger={['click']} className={themeVal === "dark" ? 'filterContainer darkFilterContainer ' : 'filterContainer'} menu={{ items, onClick }}>
       <div className='filterTitle'>
-        <div>Filter by Region</div>      
+        <div>{FILTER_BY_REGION}</div>      
         <DownOutlined />
       </div>           
     </Dropdown>

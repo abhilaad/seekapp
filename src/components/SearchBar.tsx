@@ -5,6 +5,7 @@ import { useAppDispatch } from '../store';
 import { setCountryData } from '../countrySlice';
 import "./SearchBar.css"
 import CountryDataType from '../entities/CountryData';
+import { SEARCH_COUNTRY } from '../constants/stringConstants';
 
 const SearchBar = () => {  
     const [searchVal, setSearchVal] = useState<string>("")
@@ -26,7 +27,7 @@ const SearchBar = () => {
   return (
     <div className={theme === "dark" ? 'searchContainer darkSearchContainer' : 'searchContainer'}>
         <SearchOutlined className='searchInput' />
-        <input ref={inputRef} placeholder='Search for a country...' className={theme === "dark" ? 'searchInput darkSearchInput' : 'searchInput'} value={searchVal} onChange={handleChange}type='text'></input>
+        <input ref={inputRef} placeholder={SEARCH_COUNTRY} className={theme === "dark" ? 'searchInput darkSearchInput' : 'searchInput'} value={searchVal} onChange={handleChange}type='text'></input>
     </div>
   )
 }
