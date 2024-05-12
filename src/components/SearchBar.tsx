@@ -15,7 +15,7 @@ const SearchBar = () => {
       if(inputRef.current){
         inputRef.current.focus()
       }
-    },[])
+    },[theme])
     const handleChange = (event: React.ChangeEvent<HTMLInputElement>)=>{
       const data = localStorage.getItem("localData") as string
       const value = JSON.parse(data)

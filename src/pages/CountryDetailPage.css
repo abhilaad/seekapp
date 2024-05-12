@@ -1,6 +1,6 @@
 .countryDetailWrapper {
     height: calc(100vh - 80px);
-    padding: 60px;
+    padding: 0px 80px;
     font-size: 14px;
 }
 .darkCountryDetailWrapper {
@@ -24,13 +24,14 @@
 
 .detailSection {
     display: flex;
+    padding-top: 10px;
 }
 .leftSection {
     max-width: 556px;
 }
 .rightSection {
     max-width: 680px;
-    padding-left: 120px;
+    padding-left: 80px;
     display: flex;
     justify-content: center;
     align-items: center;  
@@ -116,7 +117,7 @@
         min-height: 460px;
     }
     .rightSection {
-        padding-left: 80px;        
+        padding-left: 70px;        
     }
     .footerPart {
         padding-top: 20px;
@@ -132,7 +133,7 @@
     }
     .rightSection {
         max-width: 500px;
-        padding-left: 65px;        
+        padding-left: 55px;        
     }
     .footerPart {
         padding-top: 5px;
@@ -140,6 +141,9 @@
   }
 
   @media screen and (max-width: 768px) {
+    .countryInfoWrapper{
+        padding: 20px
+    }
     .countryDetailWrapper {
         padding: 30px;
         padding-top: 0px;
@@ -154,6 +158,7 @@
     .rightSection {
         /* max-width: 100%; */
         padding: 10px;
+        padding-bottom: 50px;
     }
     .detailFlagImage {
         max-width: 100%;
