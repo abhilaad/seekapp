@@ -16,6 +16,7 @@
     cursor: pointer;
     margin-top: 40px;
     margin-bottom: 40px;
+    background-color: white;
 }
 .backButton {
     padding-left: 10px;
@@ -90,6 +91,7 @@
     border: none;
     border-radius: 5px;
     background-color: white;
+    cursor: pointer;
 }
 .darkBorderTag {    
     background-color: #2B3844;

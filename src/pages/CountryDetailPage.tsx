@@ -14,10 +14,11 @@ const CountryDetailPage = () => {
   const data = location.state.data
   useEffect(()=>{
     const bodyElement  = document.querySelector<HTMLElement>(".body")!
-    if(theme === "dark"){
+    if(theme === "dark" && bodyElement){
       bodyElement.style.backgroundColor = "#202C36"      
     }
     else{
+      if(bodyElement)
       bodyElement.style.backgroundColor = "#FAFAFA"      
     }
   },[theme])  
@@ -50,10 +51,17 @@ const CountryDetailPage = () => {
     }
   },[])
 
+  const handleClick = (val:string)=>{
+    const getCountryDetail = value.find((item:CountryDataType)=> item.name === val)
+    navigate("/detail", {
+      state : {data:getCountryDetail}
+    })
+  }
+
   
   return (
     <div className={theme === "dark" ? 'countryDetailWrapper darkCountryDetailWrapper' : 'countryDetailWrapper'}>
-      <button className='backButtonWrapper darkBorderTag' onClick={()=>{
+      <button className= {theme === "dark" ? "backButtonWrapper darkBorderTag" : "backButtonWrapper" } onClick={()=>{
         navigate("/")
       }}>
         <ArrowLeftOutlined />
@@ -84,7 +92,9 @@ const CountryDetailPage = () => {
             {borders?.length > 0 && <div className='footerPart'>
               <div className='footerTitle'>Border Countries:</div>
               <div className="footerContent">{borders.map((item: string)=>{
-                return (<button className={theme === "dark" ? "borderTag darkBorderTag" : "borderTag"} >{item}</button>)
+                return (<button key={item} onClick={()=>{
+                  handleClick(item)
+                }} className={theme === "dark" ? "borderTag darkBorderTag" : "borderTag"} >{item}</button>)
               })}</div>
             </div>}
 

@@ -1,6 +1,8 @@
 .filterContainer {
     min-width: 200px;
-    padding: 15px;    
+    padding: 15px;   
+    cursor: pointer;
+    border-radius: 5px; 
 }
 .darkFilterContainer {
     background-color: #2B3844;

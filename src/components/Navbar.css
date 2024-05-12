@@ -6,6 +6,7 @@
     padding-right: 80px;
     justify-content: space-between;
     min-height: 80px;
+    border-bottom: 5px solid #FAFAFA;
 }
 .navTitle {
     font-size: 24px;
@@ -14,6 +15,7 @@
 .navDarkMode {
     background-color: #2B3844;
     color: white;
+    border-bottom: 5px solid #2B3844;
 }
 .themeIcon {
     display: inline-block;
